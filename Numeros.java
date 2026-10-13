@@ -1,3 +1,5 @@
+
+
 import java.util.Scanner; // Importa la clase Scanner para leer datos del teclado
 public class Numeros { // Declara la clase principal; debe llamarse igual que el archivo
 public static void main(String[] args) { // Método main: punto de entrada del programa
