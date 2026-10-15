@@ -9,28 +9,28 @@ public class añobis {
 
         if (año % 400 == 0 || (año % 4 == 0 && año % 100 != 0)){//comprobar si el año es bisiesto 
             System.out.println("El año " + año + " es bisiesto");
-            
+
             System.out.println("En que numero de mes estamos?");
             mes = teclado.nextInt();//leer el mes mediante su numero
             me = mes%2;//comprobar si el mes tiene 30 o 31 dias (1 si tiene 30 y 0 si tiene 31)
-            if(mes>12){System.out.println("ERROR:. ientroduce un número de mes correcto"); }//coprobar que introduce nien el mes
-            else if (mes == 2) {
-                System.out.println("tu mes tiene 29 dias, 4 semamas y 1 dia");
-            } //si es febrero no tiene ni 30 ni 31 dias pr lo que es condición aparte
+
+            if(mes > 12 ){System.out.println("ERROR:. ientroduce un número de mes correcto"); }//coprobar que introduce nien el mes
+            else if (mes == 2 ) {
+                System.out.println("tu mes tiene 29 dias, 4 semamas y 1 dia"); } //si es febrero no tiene ni 30 ni 31 dias pr lo que es condición aparte
             else {
-           switch (me) {
-            case 0:
-                System.out.println("tu mes tiene 31 dias, 4 semanas y 3 dias");
-                break;
-            case 1:
-                System.out.println("tu mes tiene 31 dias, 4 semanas y 2 dias ");
-                break;
-            default:
-                System.out.println("ERROR:. introduce un número de mes correcto");
-           }
+                switch (me) {
+                    case 0:
+                        System.out.println("tu mes tiene 31 dias, 4 semanas y 3 dias");
+                        break;
+                    case 1:
+                        System.out.println("tu mes tiene 31 dias, 4 semanas y 2 dias ");
+                        break;
+                    default:
+                        System.out.println("ERROR:. introduce un número de mes correcto");
+                }
             }
         }
-          else {
+        else {
             System.out.println("El año " + año + " no es bisiesto");
             System.out.println("En que numero de mes estamos?");
             mes = teclado.nextInt();//leer el mes mediante su numero
